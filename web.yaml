@@ -19,8 +19,8 @@
             ignore_errors: true
           - name: html
             copy:
-                    src: index.html
-                    dest: /var/www/html/index.html
+                    src: ./html/*
+                    dest: /var/www/html/
           - name: restart
             systemd:
                     name: httpd
