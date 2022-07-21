@@ -1,6 +1,6 @@
 ---
 - name: web
-  hosts: webservers
+  hosts: _web
   become: true
     #  vars_files:
     #      - variable.yaml
