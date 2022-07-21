@@ -1,3 +1,18 @@
+<!--
+<html>
+<body>
+<style>
+p {display:inline-block; width:85px;}
+</style>
+<form action="insert1.php" method="post">
+<p>아 이 디 : </p><input type="text" name="user_id"><br>
+<p>이    름 : </p><input type="text" name="user_name"><br>
+<p>이 메 일 : </p><input type="text" name="user_email"><br>
+<input type="submit" value="응모신청"><br><br>
+</form>
+</body>
+</html>
+-->
 <!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
@@ -49,7 +64,7 @@
 								PHONE<br>
 								<input type="text" style="width:300px; height:40px; font-size:12px;" placeholder="핸드폰 번호 입력" name="user_phone"><br><br>
 								E-MAIL<br>
-								<input type="text" style="width:300px; height:40px; font-size:12px;" placeholder="메일 주소 입력" name="user_email"><br><br>
+								<input type="email" style="width:300px; height:40px; font-size:12px;" placeholder="메일 주소 입력" name="user_email"><br><br>
 
 							</div>
 
