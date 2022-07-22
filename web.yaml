@@ -26,7 +26,3 @@
                     name: httpd
                     state: restarted
                     enabled: true
-          - name: enabledbphp
-            shell: amazon-linux-extras enable lamp-mariadb10.2-php7.2
-          - name: installdbphp
-            shell: amazon-linux-extras install -y lamp-mariadb10.2-php7.2
