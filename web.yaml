@@ -27,12 +27,6 @@
                     state: restarted
                     enabled: true
           - name: enabledbphp
-             action: ExecuteBash
-             inputs:
-             commands:
-              - sudo amazon-linux-extras enable lamp-mariadb10.2-php7.2
-          - name: Installdbphp
-             action: ExecuteBash
-             inputs:
-             commands:
-              - sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2
+            shell: amazon-linux-extras enable lamp-mariadb10.2-php7.2
+          - name: installdbphp
+            shell: amazon-linux-extras install -y lamp-mariadb10.2-php7.2
