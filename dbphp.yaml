@@ -11,5 +11,7 @@
             shell: amazon-linux-extras enable lamp-mariadb10.2-php7.2
           - name: installdbphp
             shell: amazon-linux-extras install -y lamp-mariadb10.2-php7.2
-          - name: dbhostinsert
-            shell: sed -i "s/dbhost/svc-db.cfmlcsyhy0vk.ap-northeast-2.rds.amazonaws.com/g" /var/www/html/insert.php
+          - replace:
+              path: /var/www/html/insert.php
+              regexp: dbhost
+              replace: svc-db.cfmlcsyhy0vk.ap-northeast-2.rds.amazonaws.com
