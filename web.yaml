@@ -35,3 +35,12 @@
               path: /var/www/html/insert.php
               regexp: dbhost
               replace: svc-db.cfmlcsyhy0vk.ap-northeast-2.rds.amazonaws.com
+          - name: Copy mysql file to client
+            copy: 
+              src: /etc/ansible/random.mysql 
+              dest: /root/random.mysql
+              owner: root
+              group: root
+              mode: 0755
+          - name: createtable
+            shell: mysql -uroot -prandom123 -h svc-db.cfmlcsyhy0vk.ap-northeast-2.rds.amazonaws.com random < /root/random.mysql

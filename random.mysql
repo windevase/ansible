@@ -1,0 +1,11 @@
+create table user(
+name char(20) not null,
+phone char(11) not null,
+email char(30) not null primary key,
+date datetime not null);
+
+create table winner(
+name char(20) not null,
+phone char(11) not null,
+email char(30) not null,
+date datetime not null);
