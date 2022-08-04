@@ -24,5 +24,4 @@ mysqli_close($connect);
 echo ("<meta http-equiv='Refresh' content='0; URL=done.html'>");
 ?>
 </body>
-</html>
-~             
+</html>          
